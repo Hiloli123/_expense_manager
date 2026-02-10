@@ -1,0 +1,188 @@
+#title{
+    text-align: center;
+    font-size: 6vh;
+    font-weight: 700;
+}
+
+#main{
+    border: 1px solid gray;
+    padding: 3%;
+}
+
+#add{
+    width: 100%;
+}
+
+label{
+    font-size: 3vh;
+    padding-left: 5px;
+}
+input, select{
+    font-size: 2vh;
+    margin-right: 15px;
+    border: 1px solid gray;
+}
+#addtask{
+    background-color: rgb(23, 145, 23);
+    color: white;
+    padding: 15px 10px;
+    font-size: 2vh;
+    border-radius: 10px;
+    margin-left: 10px;
+    border-color: white;
+}
+
+#addtask:hover{
+    background-color: white;
+    color: green;
+    border-color: green;
+
+}
+
+#get{
+    width: 100%;
+}
+
+#expanseshow{
+    padding-bottom: 2%;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    
+}
+
+
+table, tbody{
+    width: 80%;
+    border-collapse: collapse;
+    color:black
+}
+
+td,th{
+    border: 1px solid gray;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    font-size:18px;
+}
+th{
+    font-size: 20px;
+}
+
+#edit, #delete, button{
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+#edit:hover, #delete:hover, button:hover{
+    background-color: white;
+    color: green;
+    border-color: green;
+}
+
+th{
+    background-color: rgb(224, 223, 223);
+}
+
+#saveedit, #canceledit{
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+
+}
+
+
+#canceledit{
+    background-color: red;
+}
+
+#saveedit:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+#canceledit:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+#totalshow{
+    height: 5vh;
+    
+    justify-self: left;
+    padding-bottom: 2%;
+    
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#nodata{
+    width: 80%;
+    
+}
+
+#filters{
+    display: flex;
+    flex-direction: row;
+}
+#filterexpanse select, #showfilter select{
+    font-size: 20px;
+    
+}
+
+#editdelete, #savecancel{
+
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+
+}
+
+#showfilter{
+    margin-top: -8px;
+}
+
+@media (max-width:1200px){
+
+    #add{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    #addtask{
+        margin-left: -6px;
+        margin-top: 10px;
+        
+    }
+    #expanseshow{
+        overflow-x: auto;
+        width: auto;
+        padding-left: 0px;
+    }
+
+    #totalshow{
+        align-self: center;
+        padding-left: 0px;
+    }
+
+    #filters, #showfilter{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 20px;
+    }
+    select{
+        width: 40vw;
+    }
+
+}

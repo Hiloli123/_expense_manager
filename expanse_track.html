@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Expanse Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="expance_style.css">
+    
+
+</head>
+<body onload="getexpanse()">
+    <script src="expanse_track.js"></script>
+
+    <div>
+        <p id="title" >Expense Tracker</p>
+
+        <div id="main">
+
+            <div id="add" >
+
+                <label>Expence Name</label>
+
+                <input type="text" id="expansename" placeholder="Ex:Meggie,bag,etc">
+
+                <label>Expence Category</label>
+
+                <select id="expansecategory">
+                    
+                    <option value="food">Food</option>
+                    <option value="travel">Travel</option>
+                    <option value="rent">Rent</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="medical">Medical</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="investment">Investment</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+                
+                <label>Amount</label>
+
+                <input type="number" id="expanseamount" placeholder="Enter Amount">
+
+                <label>Date </label>
+
+                <input type="date" id="expensedate">
+
+                <button id="addtask" onclick="addExpanse()">Add Expence</button>
+
+                <p id="showmessage"></p>
+
+                
+                
+            </div>
+
+            <div id="get">
+                
+                <div id="expanseshow">
+ 
+
+                </div>
+                <div id="totalshow">
+
+                </div>
+
+                
+            </div>
+
+            <div id="filters">
+
+                <div id="filterexpanse">
+                    <label>Select Expence Filter by:</label>
+                    <select id="filtervalue" onchange="filterUI(this.value)">
+                        <option value="">Select</option>
+                        <option value="all">All</option>
+                        <option value="category">Category</option>
+                        <option value="amount">Amount</option>
+                        <option value="date">Date</option>
+                    </select>
+                    
+                </div>
+                <div id="showfilter">
+
+                </div>
+
+            </div>
+
+            
+            
+        </div>
+
+    </div>
+</body>
