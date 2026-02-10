@@ -135,6 +135,7 @@ th{
 }
 #filterexpanse select, #showfilter select{
     font-size: 20px;
+    margin-left: 8px;
     
 }
 
@@ -169,6 +170,9 @@ th{
         width: auto;
         padding-left: 0px;
     }
+    #filterexpanse{
+        margin-left: -5px;
+    }
 
     #totalshow{
         align-self: center;
@@ -183,6 +187,7 @@ th{
     }
     select{
         width: 40vw;
+        
     }
 
 }
